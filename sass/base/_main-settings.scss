@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+}
+body {
+  color: $primary-text-color;
+
+  font-family: $whole-document-style-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: $title-text-color;
+}
+
+ul {
+  display: flex;
+  padding-inline-start: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+nav {
+  display: flex;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+  margin-top: 20px;
+}
+p {
+  margin: 0;
+}

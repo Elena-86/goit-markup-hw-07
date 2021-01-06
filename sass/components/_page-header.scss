@@ -1,0 +1,193 @@
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  border: 1px solid #ececec;
+  color: $title-text-color;
+  background-color: $title-accent;
+}
+
+.contacts .link {
+  text-decoration: none;
+  color: $title-text-color;
+}
+
+.contacts .top-contacts .link {
+  color: $title-text-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.top-contacts {
+  align-items: baseline;
+}
+
+.logo > .first-part {
+  color: $accent-color;
+}
+
+.logo > .second-part {
+  color: $title-text-color;
+}
+
+.top-contacts .logo {
+  position: relative;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  text-decoration: none;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+  &:hover ::after,
+  &:focus ::after {
+    opacity: 1;
+  }
+}
+
+.site-nav {
+  margin-left: 94px;
+
+  & .item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.site-nav .link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.auth-nav {
+  margin-left: auto;
+}
+
+.auth-nav .link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
+  color: $primary-text-color;
+  transition-property: opacity, color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.auth-nav .top {
+  margin-left: 30px;
+}
+
+.auth-nav .top-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.current-link {
+  position: relative;
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: $accent-color;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.contacts-link {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: inline-block;
+  color: $title-text-color;
+  text-decoration: none;
+  transition-property: opacity, color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-funktion;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
