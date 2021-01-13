@@ -4,7 +4,7 @@ a {
 body {
   color: $primary-text-color;
 
-  font-family: $whole-document-style-font;
+  font-family: "Roboto", "Raleway", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
@@ -41,4 +41,19 @@ address {
 }
 p {
   margin: 0;
+}
+.container {
+  display: flex;
+  @extend %container-base-qualty;
+}
+
+.container-bottom {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  @extend %container-base-qualty;
+}
+
+.example-container {
+  @extend %container-base-qualty;
 }
